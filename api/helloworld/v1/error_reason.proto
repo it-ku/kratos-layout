@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package helloworld.v1;
+
+import "errors/errors.proto";
+
+option go_package = "kratos-layout/api/helloworld/v1;v1";
+option java_multiple_files = true;
+option java_package = "helloworld.v1";
+option objc_class_prefix = "APIHelloworldV1";
+
+enum ErrorReason {
+  option (errors.default_code) = 500;
+  SYSTEM_ERROR = 0 [(errors.code) = 500];
+  BAD_REQUEST = 1 [(errors.code) = 400];
+}
