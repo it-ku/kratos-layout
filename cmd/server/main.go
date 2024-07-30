@@ -3,8 +3,8 @@ package main
 import (
 	"flag"
 	"github.com/go-kratos/kratos/v2/encoding/json"
-	"kratos-layout/pkg/zaplog"
 	"google.golang.org/protobuf/encoding/protojson"
+	"kratos-layout/pkg/zaplog"
 	"os"
 
 	"kratos-layout/internal/conf"

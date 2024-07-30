@@ -2,10 +2,10 @@ package zaplog
 
 import (
 	rotatelogs "github.com/lestrrat-go/file-rotatelogs"
-	"kratos-layout/internal/conf"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"io"
+	"kratos-layout/internal/conf"
 	"os"
 	"path"
 	"strings"
